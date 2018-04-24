@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="APIPractice.js"></script>
+    <script src="customerClass.js"></script>
+    <title>Javascript Test</title>
+</head>
+<body class="row" style="overflow-x: hidden;">
+    <div class="container col float-left" style="background-color: #e5e5e5; color: #171717; height: auto; min-height: 100vh;">
+        <h2>Subreddit Search</h2>
+        <form class="container">
+            <div class="form-group">
+                <label for="input">Subreddit Name</label>
+                <input type="text" class="form-control" id="input" placeholder="Enter subreddit"></input>
+                <small id="emailHelp" class="form-text text-muted">Make sure you have spelt the subreddit correctly.</small>
+            </div>
+            <div class="form-group">
+                <label for="input1">Post Number</label>
+                <input type="number" class="form-control" id="input1" placeholder="Enter the amount of posts"></input>
+            </div>
+            <div class="form-group">
+                <label for="input2">Example select</label>
+                <select class="form-control" id="input2">
+                    <option>Top</option>
+                    <option>New</option>
+                    <option>Hot</option>
+                    <option>Rising</option>
+                </select>
+            </div>
+            <button onclick="submitText()" type="button" id="btnSubmit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <div class="container col float-right" style="border-left: 2px solid #e5e5e5; background-color: #171717; color: #e5e5e5; height: auto; min-height: 100vh;">
+        <div id="result"></div>
+    </div>
+</body>
+</html>
